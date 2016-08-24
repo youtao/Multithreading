@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "002_线程同步", "002_线
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "003_线程池", "003_线程池\003_线程池.csproj", "{652F4665-234C-4D95-B6FF-53B3BA1B7AF9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "004_任务并行库", "004_任务并行库\004_任务并行库.csproj", "{CA472FA3-0020-42D1-B909-2B8E3B74A921}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0041_使用TaskScheduler", "0041_使用TaskScheduler\0041_使用TaskScheduler.csproj", "{1B718AE6-5AFC-4897-AC05-56EE20FD714A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{652F4665-234C-4D95-B6FF-53B3BA1B7AF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{652F4665-234C-4D95-B6FF-53B3BA1B7AF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{652F4665-234C-4D95-B6FF-53B3BA1B7AF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA472FA3-0020-42D1-B909-2B8E3B74A921}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA472FA3-0020-42D1-B909-2B8E3B74A921}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA472FA3-0020-42D1-B909-2B8E3B74A921}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA472FA3-0020-42D1-B909-2B8E3B74A921}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B718AE6-5AFC-4897-AC05-56EE20FD714A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B718AE6-5AFC-4897-AC05-56EE20FD714A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B718AE6-5AFC-4897-AC05-56EE20FD714A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B718AE6-5AFC-4897-AC05-56EE20FD714A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
