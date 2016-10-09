@@ -7,19 +7,19 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <TextBlock Name="ContentTextBlock" 
-                   HorizontalAlignment="Left" 
+        <TextBlock Name="ContentTextBlock"
+                   HorizontalAlignment="Left"
                    Margin="40,134,0,0"
                    VerticalAlignment="Top"
                    Width="425"
-                   Height="40"                   
+                   Height="40"
                    ></TextBlock>
         <Button Content="Sync"
                 HorizontalAlignment="Left"
                 Margin="45,190,0,0"
                 VerticalAlignment="Top"
                 Width="75"
-                Click="ButtonSync_Click"                
+                Click="ButtonSync_Click"
                 ></Button>
         <Button Content="Async"
                 HorizontalAlignment="Left"

@@ -45,14 +45,14 @@ namespace _0041_使用TaskScheduler
             ContentTextBlock.Text = string.Empty;
             Mouse.OverrideCursor = Cursors.Wait;
             Task<string> task = TaskMethod();
-                task.ContinueWith(t =>
-                {
-                    ContentTextBlock.Text = t.Exception.InnerException.Message;
-                    Mouse.OverrideCursor = null;
-                },
-                CancellationToken.None,
-                TaskContinuationOptions.OnlyOnFaulted,
-                TaskScheduler.FromCurrentSynchronizationContext()
+            task.ContinueWith(t =>
+            {
+                ContentTextBlock.Text = t.Exception.InnerException.Message;
+                Mouse.OverrideCursor = null;
+            },
+            CancellationToken.None,
+            TaskContinuationOptions.OnlyOnFaulted,
+            TaskScheduler.FromCurrentSynchronizationContext()
             );
         }
 
@@ -62,12 +62,12 @@ namespace _0041_使用TaskScheduler
             Mouse.OverrideCursor = Cursors.Wait;
             Task<string> task = TaskMethod(TaskScheduler.FromCurrentSynchronizationContext());
             task.ContinueWith(t =>
-                {
-                    Mouse.OverrideCursor = null;
-                },
-                CancellationToken.None,
-                TaskContinuationOptions.None,
-                TaskScheduler.FromCurrentSynchronizationContext()
+            {
+                Mouse.OverrideCursor = null;
+            },
+            CancellationToken.None,
+            TaskContinuationOptions.None,
+            TaskScheduler.FromCurrentSynchronizationContext()
             );
         }
 
@@ -82,10 +82,10 @@ namespace _0041_使用TaskScheduler
             return delay.ContinueWith(e =>
             {
                 string str = string.Format("Task is runing on a thread id {0}. Is thread  pool thread:{1}",
-                    Thread.CurrentThread.ManagedThreadId,
-                    Thread.CurrentThread.IsThreadPoolThread);
+                Thread.CurrentThread.ManagedThreadId,
+                Thread.CurrentThread.IsThreadPoolThread);
                 ContentTextBlock.Text = str;
-                return str;
+                return str;                
             }, scheduler);
         }
     }
